@@ -1,0 +1,26 @@
+{
+  "name": "youtube-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sh proto/build.sh",
+    "server": "ts-node server/index.ts",
+    "client": "ts-node client/index.ts",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "Vladimir Bil",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/google-protobuf": "^3.15.6",
+    "grpc_tools_node_protoc_ts": "^5.3.3",
+    "grpc-tools": "^1.12.4",
+    "prettier": "2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "grpc": "^1.24.11"
+  }
+}
